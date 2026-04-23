@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ecat Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <label >Enter Matric Total marks</label>
+        <input id="matrictotal"type="number">
+        <label >Enter Matric obtained marks</label>
+        <input id="matricobt"type="number">
+        <label >Enter first year total marks</label>
+        <input id="firsttotal" type="number">
+        <label >Enter first year obtained marks</label>
+        <input id="firstobtained" type="number">
+        <label >Enter obtained marks of test</label>
+        <input id="testobtained"type="number">
+        <select name="" id="selection">
+
+            
+            <option value="">Select an option</option>
+            <option value="ECAT">ECAT</option>
+            
+            <option value="NET">NET</option>
+        </select>
+        <button onclick="calculate()">Calculate</button>
+     <h1 id="result"></h1>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

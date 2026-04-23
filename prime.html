@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prime</title>
+</head>
+<body>
+    <input id="nums"type="number">
+    <button onclick="check()">check</button>
+    <script>
+        let num;
+        let found=true;
+        function check(){
+            num=parseInt(document.getElementById("nums").value);
+             for(let i=2;i<num;i++){
+                if(num%i==0){
+                    found=false;
+                    break;
+                }
+                found=true;
+
+             }
+             if(found){
+                alert("The number is prime.");
+             }
+             else {
+                alert("The number is not prime.");
+             }
+        }
+    </script>
+</body>
+</html>
